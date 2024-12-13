@@ -9,7 +9,7 @@ from pptx.util import Inches
 # ページの基本設定
 st.set_page_config(page_title="アンケートツール", layout="centered")
 
-# BootstrapのCDNを適用
+# Bootstrapを適用
 st.markdown(
     """
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +55,7 @@ responses = {}
 # フォーム
 st.markdown("<div class='container'>", unsafe_allow_html=True)
 for i, question in enumerate(questions):
-    if "満足度" in question:
+    if "XXX" in question:
         response = st.slider(question, min_value=1, max_value=10, key=f"q{i+1}")
     else:
         st.markdown(f"""
